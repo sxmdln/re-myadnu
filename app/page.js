@@ -20,7 +20,7 @@ const googleIcon = (
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col justify-between">
+    <main className="flex min-h-screen flex-col justify-between bg-white">
       <div>
         <NavigationBar />
         <Login />
@@ -32,8 +32,8 @@ export default function Home() {
 
 const NavigationBar = () => {
   return (
-    <div className="flex flex-row bg-blue justify-between items-center px-12 py-3">
-      <Link href="/" className="title text-white">
+    <div className="flex flex-row  bg-blue justify-between items-center px-12 py-5">
+      <Link href="/" className="title text-white font-serif text-2xl ">
         <span className="italic">my</span>ADNU
       </Link>
     </div>
@@ -111,7 +111,7 @@ function LoginForm() {
 function RememberMe() {
   return (
     <div className="flex flex-nowrap items-center mt-2 -ml-36 pt-1 pb-4">
-      <input type="checkbox" className="mr-2" />
+      <input type="checkbox" className="mr-3" />
       <p>Remember me</p>
     </div>
   );
